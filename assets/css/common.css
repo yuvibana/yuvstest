@@ -1,0 +1,56 @@
+/* flexbox */
+.dflex {display: flex;}
+.contentbetween {justify-content: space-between;}
+.contentCenter {justify-content: center;}
+.itemscenter {align-items: center;}
+.itemsstart {align-items: flex-start;}
+.flexdirectioncol {flex-direction: column;}
+.flexwrap {flex-wrap: wrap;}
+.fgap-5 {gap: 0 5px;}
+.fgap-10 {gap: 0 10px;}
+.fgap-15 {gap: 0 15px;}
+.bigheading {font-size: 40px;}
+/* texttransform */
+.textcapitalize {text-transform: capitalize;}
+.textuppercase {text-transform: uppercase;}
+/* text-align */
+.textcenter {text-align: center;}
+.textstart {text-align: start;}
+/* fontsizes */
+.fontsize25 {font-size: 25px;}
+.fontsize22 {font-size: 22px;}
+.fontsize20 {font-size: 20px;}
+.fontsize18 {font-size: 18px;}
+.fontsize16 {font-size: 16px;}
+.fontsize15 {font-size: 15px;}
+.fontsize14 {font-size: 14px;}
+.fontsize12 {font-size: 12px;}
+/* fontweight */
+.fontweight400 {font-weight: 400;}
+.fontweight500 {font-weight: 500;}
+.fontweight600 {font-weight: 600;}
+.fontweight700 {font-weight: 700;}
+.fontweight800 {font-weight: 800;}
+/* rounded */
+.rounded-5 {border-radius: 5px;}
+.rounded-10 {border-radius: 10px;}
+.rounded-15 {border-radius: 15px;}
+.rounded-100 {border-radius: 100px;}
+/* btns */
+.commonbtn {padding: 14px 25px 14px 25px;border-radius: 50px;color: #fff;box-shadow: 0px 13px 43px 0px rgba(100, 157, 252, 0.62);background: linear-gradient(200.97deg, #FF1CF7 4.05%, #00F0FF 109.65%), linear-gradient(0deg, rgba(255, 255, 255, 0.67), rgba(255, 255, 255, 0.67));}
+.commonbtn:hover {transition: all 0.4s ease-in-out;background: linear-gradient(200.97deg, #f214ea 4.05%, #00d1e0 109.65%), linear-gradient(0deg, rgba(223, 223, 223, 0.67), rgba(230, 230, 230, 0.67));}
+/* text colors */
+.colorpurple {color: #A23BE7;}
+.colorblack {color: #474261;}
+.colorblack1 {color: #23262F;}
+.colorwhite {color: #fff;}
+.colorbluishpurple {color: #2E1A57;}
+.graytext {color: #596B9A;}
+.graytext1 {color: #686A7B;}
+.bluetext {color: #9377FB;}
+.cursorPointer {cursor: pointer;}
+.addInterFont {font-family: 'Inter', sans-serif;}
+.addDmFont {font-family: 'DM Sans', sans-serif;}
+.addJostFont {font-family: 'Jost', sans-serif;}
+.border {border: 1px solid #E0E0E0;}
+.container {max-width: 1280px;padding: 0 15px;margin: 0 auto;}

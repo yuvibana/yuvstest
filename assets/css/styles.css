@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+
+/* local css */
+@import url(../css/reset.css);
+@import url(../css/common.css);
+@import url(../css/swiper-bundle.min.css);
+
+:root {
+    --gray: #F4F6FA;
+    --black: #474261;
+    --white: #fff;
+    --purple: #A23BE7;
+    --border: #E0E0E0;
+    --pink: #FF3F9B;
+    --blue: #9377FB;
+    --blue1: #4285F4;
+    --bluegradient: linear-gradient(13.37deg, rgba(28, 142, 244, 0.7) 31.31%, rgba(0, 207, 221, 0.7) 61.22%), linear-gradient(0deg, #9377FB, #9377FB);
+    -webkit-linear-gradient: (13.37deg, rgba(28, 142, 244, 0.7) 31.31%, rgba(0, 207, 221, 0.7) 61.22%), -webkit-linear-gradient(0deg, #9377FB, #9377FB);
+    --box-shadow: -10.834939002990723px 76px 80px 0px #1F1D551A;
+}
+
+.gradientText {background: var(--bluegradient);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+body {background: linear-gradient(297.24deg, #e2ecff 8.25%, #fff 91.76%), linear-gradient(0deg, #fafcff, #fafcff)}
+
+.sitebanner {position: relative;margin-bottom: 50px}
+.bannerimg img {width: 100%}
+.sitebanner .header {position: absolute;top: 20px;left: 0;right: 0;z-index: 9;max-width: 1548px;margin: 0 auto;background: var(--white);padding: 8px 25px;border-radius: 50px}
+
+.navmenu {flex: 0 0 65%}
+.navList .navLink {margin-left: 34px}
+.navList .navLink a {font-size: 18px;font-weight: 600;color: var(--black);text-transform: capitalize}
+.navList .navLink a:hover,.navList .navLink.activelink a {color: var(--purple)}
+.header .common-search-box {flex: 0 0 43%}
+.common-search-box {flex: 0 0 43%;background: var(--gray);padding: 10px 20px;border-radius: 50px}
+.common-search-box input {width: 80%;font-size: 15px;overflow: hidden}
+.common-search-box .commonbtn {padding: 18px 20px;box-shadow: none}
+.bannercontent {position: absolute;left: 0;right: 0;bottom: 180px;z-index: 1}
+.bannercontent .common-search-box .text,.customDropDown {position: relative}
+.bannercontent .innercontent {width: 45%}
+.bannercontent p {margin: 20px 0;line-height: 30px}
+.bannercontent .common-search-box {background-color: var(--white)}
+.bannercontent .common-search-box input {width: 60%}
+.bannercontent .common-search-box .text::before {content: ' ';position: absolute;left: -18px;height: 50px;width: 1px;background: var(--border);top: -11px;bottom: 0}
+
+.bannerHeading {font-size: 50px}
+
+.bannercontent .bannerBoxes {text-align: center;margin-top: 20px}
+.bannercontent .bannerBoxes .boxinner {background: var(--white);width: 32%;padding: 10px}
+.bannerBoxes .num {font-size: 39.02px;-webkit-text-fill-color: transparent}
+.sitebanner .bottomcircile {position: absolute;left: 10%;right: 0;bottom: -45px}
+
+
+.commoncardsgrid {display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));gap: 0 20px}
+.commonCard {padding: 10px;background: var(--white);margin-bottom: 30px;transform: scale(1)}
+.commonCard.activeCard,.commonCard:hover {transition: .4s ease-in-out;box-shadow: var(--box-shadow)}
+.commonCard .cardimges img {width: 100%;object-fit: cover}
+.commonCard .cardname {margin-bottom: 10px}
+.commonCard .cardrating {color: var(--pink)}
+.commonCard .borderbottom {border-bottom: 1px dashed var(--border);margin: 10px 0;padding-bottom: 10px}
+.commonCard .useravtar {margin-top: 10px;padding: 10px;background: var(--gray)}
+
+.customDropDown {z-index: 9}
+.customdrpList {position: absolute;background: var(--blue1);width: 100%;right: 0;top: 54px;transform: scale(0)}
+.customdrpList.dropdownActive {transform: scale(1);transition: .4s ease-in-out}
+.customdrpList li {border-bottom: 1px solid var(--white);padding: 10px}
+.customdrpList li:hover {transition: .4s ease-in-out;padding-left: 18px;background: #3772ff}
+
+
+.slidersection {margin-bottom: 100px;position: relative}
+.slidersection .bigheading {margin-bottom: 25px}
+
+.newsSlider {position: unset}
+.newsSlider .commonCard:hover {transition: .4s ease-in-out;box-shadow: none}
+.newsSlider .swiper-button-next,.newsSlider .swiper-button-prev {top: 22px;right: 15px;height: 50px;width: 57px;border-radius: 10px;background: var(--white)}
+.newsSlider .swiper-button-next {background: linear-gradient(200.97deg, #ff1cf7 4.05%, #00f0ff 109.65%), linear-gradient(0deg, rgba(255, 255, 255, .67), rgba(255, 255, 255, .67))}
+.newsSlider .swiper-button-prev {left: auto;right: 90px}
+.newsSlider .swiper-button-next::after,.newsSlider .swiper-button-prev::after {content: '';background: url(../images/common/arrow-left.png) center no-repeat;font-family: unset;height: 30px;width: 50px}
+.newsSlider .swiper-button-next::after {background: url(../images/common/arrow-right.png) center no-repeat}
+
+
+.commonHeadingdiv .smalltext {position: relative;padding-left: 35px;display: block}
+.commonHeadingdiv .smalltext::before {position: absolute;content: '';height: 20px;width: 20px;border-radius: 100px;background: #9377fb;left: 0}
+.commonHeadingdiv .centerdtext,.commonHeadingdiv.centerdheading {width: fit-content;margin: 0 auto}
+
+.categorysection,.popularseller .flexdiv {margin-bottom: 30px}
+
+.createandsell,.createandsell .commonHeadingdiv,.popularseller {margin-bottom: 50px}
+.categorysection .categoryTypes {margin-top: 10px;padding-top: 100px}
+.categorysection .categoryTypes .typebox {width: 24%;background: var(--white);margin-bottom: 100px;padding: 15px;position: relative}
+.categoryTypes img {position: absolute;top: -70px}
+.categoryTypes .branname {padding: 59px 0 36px}
+.createandsell {position: relative;padding: 134px 15px 0}
+.createandsell .selltitle {padding: 15px 0}
+
+.sellcatdboxes .boxinner {padding: 25px;background: var(--white);width: 297px;box-shadow: var(--box-shadow)}
+.sellcatdboxes .boxinner.activebox {padding: 25px 25px 35px;border-bottom: 4px solid var(--blue1)}
+.createandsell .sellImg {position: absolute;top: 0;right: 0;z-index: -1}
+
+.popularseller .flexdiv .rihgtdiv {width: 312px;background-color: var(--white);padding: 10px 8px 10px 16px}
+
+
+.commonsellerCard .btns {padding: 2px 8px;border-radius: 24px;width: 55px;height: 25px;background: #3772ff}
+.commonsellerCard .btns.purplebtn {background: #9757d7}
+.commonsellerCard .btns.blackbtn {background-color: #23262f}
+.commonsellerCard .btns.graybtn {background-color: #777e90}
+.commonsellerCard .btns.greenbtn {background-color: #45b26b}
+.commonsellerCard .selltopflex {margin-bottom: 30px;padding-bottom: 30px;border-bottom: 1px solid var(--border)}
+.commonsellerCard .sellerinnerCard {width: 20%;background: var(--white);padding: 24px}
+.commonsellerCard .sellerinnerCard:hover,.sellerinnerCard.activeSellCard {box-shadow: 0 64px 64px -48px #1034691F;padding-bottom: 35px;transition: .4s ease-in-out}
+.commonsellerCard .userprfilediv .figavtar {position: relative;width: fit-content}
+.commonsellerCard .userprfilediv .positionedicon {position: absolute;right: -12px;bottom: 6px}
+
+
+.hotCollection {padding: 100px 0;background: url(../images/others/collectionBG.png) center no-repeat #5f6bf9}
+.hotCollection .collectionflexdiv {margin-top: 50px}
+.hotCollection .smalltext::before {background: #00e1ff}
+.hotCollection .title {padding: 10px 0}
+.hotCollection .itemsbtn {color: #22d2fb;padding: 8px 8px 6px;border: 2px solid #e6e8ec}
+.newsletterdiv {max-width: 615px;margin: 0 auto;padding: 50px 0}
+.newsletterdiv .common-search-box {border-radius: 10px !important;flex: 0 0 64%}
+.newsletterdiv .commonbtn {border-radius: 10px !important;padding: 10px 19px !important}
+
+
+.exploreNewsCards .exploreflexdiv {margin-bottom: 15px}
+.positionedheading {position: absolute;z-index: 1;top: 50%;left: 50%;transform: translate(-50%, 28%);font-size: 50px}
+.exploreNewsCards .paginationdiv {padding: 30px 0}
+.paginationdiv .pagenum {padding: 17px 25px;background: #fff}
+.paginationdiv .pagenum.activepage,.paginationdiv .pagenum:hover {background: linear-gradient(200.97deg, #ff1cf7 4.05%, #00f0ff 109.65%), linear-gradient(0deg, #fff, #fff)}
+
+.sitefooter {padding: 50px 15px}
+.sitefooter .linksdiv a {display: inline-block;padding: 0 15px}
+.hamburgerIcon img {width: 56px}
+
+.show-element-in-ipad {display: none}
+
+@media (max-width:1540px) {
+    .sitebanner .header {max-width: 1457px;padding: 5px 20px}
+
+    .header .logo img {width: 181px}
+    
+    .bannerHeading {font-size: 30px}
+
+    .bannercontent p {margin: 10px 0}
+}
+
+@media (max-width:1300px) {
+    .bannercontent {bottom: 105px}
+    .navList .navLink {margin-left: 26px}
+}
+
+@media (max-width:1024px) {
+    .hide-element-in-ipad {display: none}
+
+    .navList,.show-element-in-ipad {display: block}
+    .banner-ipad img {height: 649px}
+    .innerbannersite .banner-ipad img {height: 200px}
+    
+    .bannerHeading {font-size: 40px}
+
+    .bannercontent .innercontent {width: 100%}
+
+    .bannerBoxes strong {font-size: 14px}
+
+    .navmenu {flex: 0 0 44%}
+    .navList {position: absolute;right: 15px;top: 71px;background: #2e1A57E8;width: 333px;border-radius: 10px;transform: scale(0)}
+    .navList.active {transition: .4s ease-in-out;transform: scale(1)}
+    .navList .navLink {margin: 0;border-bottom: 1px solid #fff}
+    .navList .navLink a {padding: 10px;display: block;text-align: center;color: #fff}
+    .navList .navLink:last-child {border-bottom: 0}
+    .header .common-search-box {padding: 4px 10px;margin: 4px;flex: 0 0 94%}
+}
+
+@media (max-width:991px) {
+
+    .commonsellerCard,.hotCollection .collectionflexdiv {white-space: nowrap;overflow-x: auto}
+    
+    .sitebanner .header {max-width: 763px}
+
+    .common-search-box .commonbtn {padding: 11px 12px}
+    .commonbtn {padding: 10px 7px;font-size: 15px}
+    
+    .hamburgerIcon img {width: 42px}
+    
+    .bannerHeading {font-size: 30px}
+    
+    .categoryTypes .branname {padding: 43px 0 21px;font-size: 17px}
+    
+    .commonsellerCard .sellerinnerCard {width: 43%;flex: 0 0 43%}
+    
+    
+    .sellcatdboxes .boxinner {width: 229px}
+    .sellcatdboxes .boxinner .fontsize15 {font-size: 13px}
+    
+    .hotCollection .collectionflexdiv {gap: 0 16px}
+    .hotCollection .title {font-size: 16px}
+    .hotCollection .leftdiv {gap: 0 5px}
+    .hotCollection .leftdiv img {width: 45px}
+    .hotCollection .h-name {font-size: 12px}
+}
+
+@media (max-width:576px) {
+
+    .createandsell .commonHeadingdiv,.newsletterdiv {text-align: center}.header .logo img {width: 125px}
+    .banner-ipad img {height: 450px}
+    .innerbannersite .banner-ipad img {height: 154px}
+    .navList {position: unset}
+    .sitebanner .header {margin: 0 5px;padding: 4px 8px}
+    .navmenu {display: block;position: absolute;right: 15px;top: 71px;background: #2e1A57E8;width: 333px;border-radius: 10px;transform: scale(0);padding: 10px 0}
+    .navmenu.active {transform: scale(1)}
+    
+    
+    .bannerBoxes .num,.bannerHeading,.fontsize22,.fontsize25 {font-size: 18px}
+    .bannercontent {bottom: 18px}
+    .bannerBoxes strong,.common-search-box span.fontsize15,.commonCard .cardrating,.newsSlider .cradtype,.newsSlider span {font-size: 12px}
+    .bannercontent p.fontsize18 {font-size: 15px;line-height: inherit}
+    .common-search-box {padding: 8px}
+    .bannercontent .common-search-box .text::before {left: -6px}
+    .bannercontent .common-search-box input {font-size: 12px;width: fit-content}
+    
+    .bigheading {font-size: 20px}
+    
+    .newsSlider .swiper-button-next,.newsSlider .swiper-button-prev {height: 42px;width: 50px}
+    .slidersection {margin-bottom: 40px}
+    
+    
+    .categorysection,.commonCard .cardname {margin-bottom: 0}
+    .categoryTypes .branname,.commonCard .cardname,.newsSlider .cardname.fontsize20 {font-size: 13px}
+    .categorysection .categoryTypes .typebox {width: 47%;margin-bottom: 67px}
+    .categoryTypes img {width: 75px;top: -44px}
+    
+    
+    .createandsell {padding: 0 15px}
+    .createandsell .sellImg,.sitefooter .linksdiv {display: none}
+    .createandsell .sellcatdboxes,.popularseller .flexdiv {flex-wrap: wrap}
+    .sellcatdboxes .boxinner {width: 100%;margin-bottom: 15px}
+    .createandsell .commonHeadingdiv .smalltext {width: fit-content;margin: 0 auto}
+    
+    .fontsize16 {font-size: 11px}
+    
+    .exploreflexdiv .newscatagoryfilter .commonbtn,.popularseller .flexdiv .rihgtdiv {width: 100%}
+    .exploreflexdiv {flex-wrap: wrap;flex-direction: column-reverse}
+    .exploreflexdiv .newscatagoryfilter {margin-bottom: 26px;width: 100%}
+    
+    .commonsellerCard .sellerinnerCard {width: 46%;flex: 0 0 46%;padding: 10px}
+    
+    .hotCollection .collectionflexdiv {margin-top: 15px}
+    .hotCollection {padding: 30px 0}
+    .hotCollection .collectioninner {flex: 0 0 100%}
+    
+    .footerlinkesFlexdiv {display: block;text-align: center}
+    .sitefooter .logo,.sitefooter .socLinkes {width: 100%;margin: 0 auto;display: block}
+    
+    .newsletterdiv {padding: 15px 0;flex-wrap: wrap}
+    .newsletterdiv .common-search-box {width: 100%;flex: 0 0 100%;margin-top: 10px}
+    .commonbtn {padding: 6px 11px;font-size: 12px}
+    
+    .positionedheading {font-size: 18px;transform: translate(-50%, 86%)}
+    
+    .commoncardsgrid {grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));gap: 0 5px}
+    .commonCard .useravtar img {width: 20px}
+}
