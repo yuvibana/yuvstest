@@ -260,6 +260,7 @@ body {background: linear-gradient(297.24deg, #e2ecff 8.25%, #fff 91.76%), linear
     
     .positionedheading {font-size: 18px;transform: translate(-50%, 86%)}
     
-    .commoncardsgrid {grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));gap: 0 5px}
+    .commoncardsgrid {grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));gap: 0 3px}
     .commonCard .useravtar img {width: 20px}
+    .commoncardsgrid .fontsize16 {font-size: 9px;}
 }
