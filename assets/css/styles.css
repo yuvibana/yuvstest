@@ -39,7 +39,6 @@ body {background: linear-gradient(297.24deg, #e2ecff 8.25%, #fff 91.76%), linear
 .common-search-box .commonbtn {padding: 18px 20px;box-shadow: none}
 .bannercontent {position: absolute;left: 0;right: 0;bottom: 180px;z-index: 1}
 .bannercontent .common-search-box .text,.customDropDown {position: relative}
-.bannercontent .common-search-box .text{  white-space: nowrap;padding: 0 10px;}
 .bannercontent .innercontent {width: 45%}
 .bannercontent p {margin: 20px 0;line-height: 30px}
 .bannercontent .common-search-box {background-color: var(--white)}
